@@ -51,7 +51,7 @@
  * @version $Id$
  */
 
-class tx_cachebackendzend_zdc extends t3lib_cache_backend_AbstractBackend {
+class tx_cachebackendzend_cache_backend_zdc extends t3lib_cache_backend_AbstractBackend {
 
 	/**
 	 * A prefix to seperate stored data from other data possible stored in the ZDC
