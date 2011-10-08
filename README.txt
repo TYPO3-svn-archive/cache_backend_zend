@@ -1,4 +1,6 @@
 Extension for using the Zend Data Cache on Zend Server.
+Please, install this extension first and run one time your frontend before adding the below lines inside the localconf.php
+If you do not this, you will probably got a "no class found" exception.
 
 Inspired by "rediscache" extension : http://typo3.org/extensions/repository/view/rediscache/current/
 Thanks to Steffen Gebert for helping me.

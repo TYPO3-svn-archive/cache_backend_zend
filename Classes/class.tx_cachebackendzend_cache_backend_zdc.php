@@ -65,7 +65,7 @@ class tx_cachebackendzend_cache_backend_zdc extends t3lib_cache_backend_Abstract
 	 *
 	 * @param array $options Configuration options - unused here
 	 */
-	public function __construct(array $options = array()) {
+	public function __construct($context, array $options = array()) {
 		if (!extension_loaded('Zend Data Cache')) {
 			throw new t3lib_cache_Exception(
 				'The PHP extension "Zend Data Cache" must be installed and loaded in order to use the Zend Data Cache backend.',
@@ -73,7 +73,7 @@ class tx_cachebackendzend_cache_backend_zdc extends t3lib_cache_backend_Abstract
 			);
 		}
 
-		parent::__construct($options);
+		parent::__construct($context, $options);
 	}
 
 	/**
