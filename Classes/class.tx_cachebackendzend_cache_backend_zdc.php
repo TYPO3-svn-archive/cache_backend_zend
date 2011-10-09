@@ -63,6 +63,7 @@ class tx_cachebackendzend_cache_backend_zdc extends t3lib_cache_backend_Abstract
 	/**
 	 * Constructs this backend
 	 *
+	 * @param 
 	 * @param array $options Configuration options - unused here
 	 */
 	public function __construct($context, array $options = array()) {
