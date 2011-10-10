@@ -28,8 +28,7 @@
  * Constructor of t3lib_cache_backend_Backend has 2 arguments since 4.6
  *
  */
-
-abstract class tx_cachebackendzend_cache_backend_zdc_ocb extends tx_cachebackendzend_cache_backend_zdc {
+class tx_cachebackendzend_cache_backend_zdc_ocb extends tx_cachebackendzend_cache_backend_zdc {
 	
 	/**
 	 * Constructs this backend
