@@ -29,7 +29,7 @@
  *
  */
 
-abstract class t3lib_cache_backend_AbstractBackend_ocb extends t3lib_cache_backend_AbstractBackend {
+abstract class tx_cachebackendzend_cache_backend_zdc_ocb extends tx_cachebackendzend_cache_backend_zdc {
 	
 	/**
 	 * Constructs this backend
@@ -38,7 +38,7 @@ abstract class t3lib_cache_backend_AbstractBackend_ocb extends t3lib_cache_backe
 	 */
 	public function __construct(array $options = array()) {
 		// Context is empty for now
-		parent::__construct($context, array $options = array());
+		parent::__construct($context, $options);
 	}
 }
 

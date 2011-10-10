@@ -73,8 +73,11 @@ class tx_cachebackendzend_cache_backend_zdc extends t3lib_cache_backend_Abstract
 				1232985415
 			);
 		}
-
-		parent::__construct($context, $options);
+		if((double)$TYPO3_CONF_VARS['SYS']['compat_version'] >= 4.6 ) {
+			parent::__construct($context, $options);
+		} else {
+			parent::__construct($options);
+		}
 	}
 
 	/**
