@@ -7,13 +7,8 @@ Thanks to Steffen Gebert for helping me.
 
 Source code & forge : http://forge.typo3.org/projects/extension-cache_backend_zend/
 
-Add those lines in your typo3conf/localconf.php
+Add those lines in your typo3conf/localconf.php :
 
-
-$TYPO3_CONF_VARS['SYS']['useCachingFramework'] = true;
-$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['cache_pages']['backend'] = 'tx_cachebackendzend_cache_backend_zdc_ocb';
-$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['cache_pages']['options'] = Array(); 
-
-TYPO3 4.6 or highter :
+$TYPO3_CONF_VARS['SYS']['useCachingFramework'] = true; // this line for TYPO3 < 4.6
 $TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['cache_pages']['backend'] = 'tx_cachebackendzend_cache_backend_zdc';
 $TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['cache_pages']['options'] = Array(); 
