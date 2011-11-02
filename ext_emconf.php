@@ -12,10 +12,12 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Cache backend using Zend Data Cache',
-	'description' => '',
-	'category' => 'fe',
+	'description' => 'New cache backend to use the Zend Data Cache component provides on Zend Server. Works on TYPO3 4.5 and higher. Have a look at the README.txt for more technical information.
+	',
+	'category' => 'services',
 	'author' => 'Benoit Norrin',
 	'author_email' => 'benoit@norrin.fr',
+	'author_company' => 'DLCube & Haras-nationaux',
 	'shy' => '',
 	'dependencies' => '',
 	'conflicts' => '',
@@ -26,12 +28,13 @@ $EM_CONF[$_EXTKEY] = array(
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'modify_tables' => '',
-	'clearCacheOnLoad' => 0,
+	'clearCacheOnLoad' => 1,
 	'lockType' => '',
 	'author_company' => '',
-	'version' => '0.1.0',
+	'version' => '0.2.0',
 	'constraints' => array(
 		'depends' => array(
+			'typo3' => '4.5.0-4.6.99'
 		),
 		'conflicts' => array(
 		),
